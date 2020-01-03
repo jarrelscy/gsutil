@@ -49,6 +49,7 @@ class BufferWrapper(object):
                            locking.
     """
     self.daisy_chain_wrapper = daisy_chain_wrapper
+    self.mode = 'b'
 
   def write(self, data):  # pylint: disable=invalid-name
     """Waits for space in the buffer, then writes data to the buffer."""
